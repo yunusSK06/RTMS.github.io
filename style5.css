@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(images/111.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 500px;
+    height: 600px;
+    box-shadow: 0 0 10px transparent;
+    margin: 50px 20px;
+    margin-left: 0;
+}
+
+.border {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group button {
+    background-color: #71d0f5;
+    color: #edf3f7;
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background-color: gold;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.signup-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.home-sci {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.footer {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
